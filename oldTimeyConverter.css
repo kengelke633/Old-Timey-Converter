@@ -1,0 +1,60 @@
+#mf{
+  width: 130px;
+  height: 30px;
+  background-color: #A81F1F;
+  color: white;
+  font-size: 15px;
+}
+#mf:hover{
+  background-color: #FFC874;
+  color: black;
+}
+#sp{
+  width: 120px;
+  height: 30px;
+  background-color: #A81F1F;
+  color: white;
+  font-size: 15px;
+}
+#sp:hover{
+  background-color: #FFC874;
+  color: black;
+}
+#fd{
+  width: 140px;
+  height: 30px;
+  background-color: #A81F1F;
+  color: white;
+  font-size: 15px;
+}
+#fd:hover{
+  background-color: #FFC874;
+  color: black;
+}
+h1{
+  font-style: normal;
+  font-family: 'Caveat', cursive;
+  text-shadow: 3px 3px 3px black;
+  font-variant: inherit;
+  font-stretch: ultra-expanded;
+  font-size: 80px;
+  color: #A81F1F;
+}
+p{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: lighter;
+  font-family: Lucida Handwriting;
+  font-stretch: ultra-expanded;
+  color: #403C3B;
+}
+#result{
+  font-family: Papyrus;
+  font-stretch: ultra-expanded;
+  font-weight: bold;
+  font-size: 30px;
+  color: #403C3B;
+}
+body{
+  background-color: #D16325;
+}

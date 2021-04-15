@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Old Timey Converter</title>
+    <link rel = "stylesheet" href = "oldTimeyConverter.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script>
+      function fur()
+      {
+        var x = document.getElementById('start').value;
+        x = parseInt(x);
+        var y = document.getElementById("end").value;
+        y = parseInt(y);
+        var res = 0;
+        var nums = "Miles to Furlongs<br><hr><br>";
+        //start    condition   end
+        for(var i = x; i <= y; i++)
+        {
+            res = i * 8;
+          nums = nums + i + " miles  -  " + res + " furlongs<br>";//makes two columns
+        }
+        document.getElementById("result").innerHTML = nums;
+      }
+      function lb()
+      {
+        var x = document.getElementById('start').value;
+        x = parseInt(x);
+        var y = document.getElementById("end").value;
+        y = parseInt(y);
+        var res = 0;
+        var nums = "Slugs to Pounds<br><hr><br>";
+        for(var i = x; i <= y; i++)
+        {
+            res = i * 32.174;
+          nums = nums + i + " slugs  -  " + res + " pounds<br>";
+        }
+        document.getElementById("result").innerHTML = nums;
+      }
+      function days()
+      {
+        var x = document.getElementById('start').value;
+        x = parseInt(x);
+        var y = document.getElementById("end").value;
+        y = parseInt(y);
+        var res = 0;
+        var nums = " Fortnights to Days<br><hr><br>";
+        for(var i = x; i <= y; i++)
+        {
+            res = i * 14;
+          nums = nums + i + " fortnights  -  " + res + " days<br>";
+        }
+        document.getElementById("result").innerHTML = nums;
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <h1 class="font-effect-neon">Welcome Traveler, Convert some Units?</h1>
+    <p>Start Value</p>
+    <input type = "text" id = "start">
+    <p>End Value</p>
+    <input type = "text" id = "end"><br><br>
+    <input id = "mf" type = "button" value = "Miles to Furlongs" onclick = "fur()">
+    <input id = "sp" type = "button" value = "Slugs to Pounds" onclick = "lb()">
+    <input id = "fd" type = "button" value = "FortNights to Days" onclick = "days()">
+    <br><hr><br>
+    <p id = "result"></p>
+  </body>
+</html>
